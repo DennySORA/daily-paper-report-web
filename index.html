@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+  <link rel="icon" href="data:,">
+  <title>每日論文報告｜合成資料預覽</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --canvas: #0c1118;
+      --panel: #131c27;
+      --line: #35465c;
+      --rule: #253141;
+      --ink: #e6edf5;
+      --muted: #b8c5d6;
+      --blue: #96c3ff;
+      --amber: #edca8b;
+      --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
+      background: var(--canvas);
+      color: var(--ink);
+      font: 100%/1.6 system-ui, "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    * { box-sizing: border-box }
+    body { margin: 0 }
+    .wrap { max-inline-size: 60rem; margin-inline: auto; padding-inline: clamp(1rem, 4vw, 2.5rem) }
+    header { border-block-end: 1px solid var(--rule) }
+    .mast { display: flex; align-items: center; gap: .65rem; min-block-size: 3.25rem; font-weight: 650 }
+    .mark, .icon { flex: none; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round }
+    .mark { inline-size: 1.45rem; block-size: 1.45rem; stroke-width: 1.7; color: var(--blue) }
+    .icon { inline-size: 1.2rem; block-size: 1.2rem; stroke-width: 1.8 }
+    .skip:not(:focus) { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%) }
+    .skip:focus { display: inline-block; padding: .4rem .8rem; color: var(--blue); outline: 2px solid currentColor; outline-offset: -2px }
+    main { padding-block: clamp(2rem, 6vw, 4rem) }
+    .edition { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .3rem 1.5rem; margin-block-end: 1.3rem }
+    h1, h2, p { margin: 0 }
+    h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.3 }
+    h2 { font-size: 1.1rem; line-height: 1.45 }
+    .date, small { font-size: .875rem; color: var(--muted) }
+    time, code { font-family: var(--mono); font-variant-numeric: tabular-nums }
+    .date time { color: var(--ink); margin-inline-start: .25rem }
+    .notice { display: flex; gap: .7rem; align-items: flex-start; padding: .85rem 1rem; border: 1px solid var(--line); border-inline-start: 3px solid var(--amber); border-radius: .35rem; background: var(--panel) }
+    .notice .icon { color: var(--amber); margin-block-start: .17rem }
+    .notice strong { color: var(--amber) }
+    .notice p { color: var(--muted) }
+    .section-head { display: flex; align-items: center; gap: .55rem; margin: 2.2rem 0 .7rem }
+    .section-head .icon { color: var(--blue) }
+    table { inline-size: 100%; table-layout: fixed; border-collapse: collapse; text-align: start; border-block: 1px solid var(--line) }
+    th, td { text-align: start; padding: .8rem .65rem; overflow-wrap: anywhere }
+    th { font-weight: 550 }
+    thead th { background: var(--panel); color: var(--muted); font-size: .82rem }
+    thead th:first-child { inline-size: 30% }
+    tr + tr { border-block-start: 1px solid var(--rule) }
+    tbody th { color: var(--blue); font-size: .88rem }
+    tbody td { font-weight: 550 }
+    .foot { margin-block-start: .7rem }
+    @media (max-width: 28rem) { th, td { padding-inline: .4rem } thead th:first-child { inline-size: 38% } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#samples">跳至樣本清單</a>
+  <header>
+    <div class="wrap mast">
+      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h10l4 4v10H5zM15 5v5h4M8 13h8M8 16h6"/></svg>
+      <span lang="en">Daily Paper Report</span>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="edition">
+      <h1>每日論文報告</h1>
+      <p class="date">測試日期 <time datetime="2026-10-01">2026-10-01</time> UTC</p>
+    </div>
+    <aside class="notice" aria-labelledby="notice-title">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6l-6 10a1.4 1.4 0 0 0 1.2 2h13.6a1.4 1.4 0 0 0 1.2-2L14 9V3M8 15h8"/></svg>
+      <div>
+        <strong id="notice-title">合成資料預覽</strong>
+        <p>以下 3 筆都不是真實論文，僅用於測試頁面，不代表當日的收錄結果。</p>
+      </div>
+    </aside>
+    <section aria-labelledby="samples">
+      <div class="section-head">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6h.1M4 12h.1M4 18h.1"/></svg>
+        <h2 id="samples" tabindex="-1">樣本清單</h2>
+      </div>
+      <table aria-labelledby="samples">
+        <thead><tr><th scope="col">樣本編號</th><th scope="col">原始標題</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><code>pilot-001</code></th><td lang="en">Synthetic paper 1</td></tr>
+          <tr><th scope="row"><code>pilot-002</code></th><td lang="en">Synthetic paper 2</td></tr>
+          <tr><th scope="row"><code>pilot-003</code></th><td lang="en">Synthetic paper 3</td></tr>
+        </tbody>
+      </table>
+      <p class="foot"><small>此預覽未提供評分或翻譯。</small></p>
+    </section>
+  </main>
+</body>
+</html>
